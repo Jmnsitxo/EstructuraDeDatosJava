@@ -1,4 +1,4 @@
-package Ejercicios3java;
+package com.mx.curso;
 
 public class Prueba {
 }
