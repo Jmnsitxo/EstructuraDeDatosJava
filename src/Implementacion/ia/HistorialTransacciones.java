@@ -1,5 +1,8 @@
 package Implementacion.ia;
 
+import java.util.LinkedList;
+import java.util.ListIterator;
+
 public class HistorialTransacciones {
 
     public static void main(String[] args) {
@@ -10,32 +13,35 @@ public class HistorialTransacciones {
 
         ListIterator<String> iterador = historial.listIterator();
 
+        // Agregar acciones
         iterador.add("Accion 1: Crear Documento");
         iterador.add("Accion 2: Escribir Titulo");
         iterador.add("Accion 3: Insertar Imagen");
 
-        System.out.println("Historial Completo  " + historial);
+        System.out.println("Historial Completo: " + historial);
 
-        System.out.println("Estado Actual (Accion mas reciente):" +
-                historial.getLast());
+        System.out.println("Estado actual (Acción más reciente): " + historial.getLast());
 
+        // UNDO (con previous)
         if (iterador.hasPrevious()) {
             String accionDes = iterador.previous();
-            System.out.println("UNDO" + accionDes);
+            System.out.println("UNDO: " + accionDes);
         }
 
         if (iterador.hasPrevious()) {
             String accionDes = iterador.previous();
-            System.out.println("UNDO" + accionDes);
+            System.out.println("UNDO: " + accionDes);
         }
 
-        System.out.println("Estado actual " + iterador.next());
+        // Mostrar acción actual tras los UNDO
+        System.out.println("Estado actual: " + iterador.next());
 
-        if(iterador.hasNext()){
+        // REDO (con next)
+        if (iterador.hasNext()) {
             String accionRes = iterador.next();
-            System.out.println("REDO"+ accionRes);
+            System.out.println("REDO: " + accionRes);
         }
-        System.out.println("Estado actual " + historial.get(iterador.previousIndex()));
 
+        System.out.println("Estado actual final: " + historial.get(iterador.previousIndex()));
     }
 }

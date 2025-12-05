@@ -1,10 +1,10 @@
-package Lista;
+package Lista.simple;
 
 public class listaEnlazada {
 
     Nodo cabeza;
 
-    public ListaEnlazada() {
+    public void ListaEnlazada() {
         this.cabeza = null;
 
     }
@@ -14,7 +14,7 @@ public class listaEnlazada {
         Nodo nuevoNodo = new Nodo(nuevoDato);
         nuevoNodo.siguiente = cabeza;
 
-        cabeza = nuevoNNodo;
+        cabeza = nuevoNodo;
         System.out.println("insertado al inicio" + nuevoDato);
     }
 
@@ -29,7 +29,7 @@ public class listaEnlazada {
         }
 
         //si la lista no esta vacia, recorrer hasta el ultimo nodo
-        nodo actual = cabeza;
+        Nodo actual = cabeza;
         while( actual.siguiente !=null){
             actual = actual.siguiente;
         }
@@ -39,14 +39,14 @@ public class listaEnlazada {
 
     }
     public void imprimirLista(){
-        Nddo actual = cabeza;
+        Nodo actual = cabeza;
         System.out.println("Lista simple");
 
         while (actual !=null){
-            system.out.println(actual.dato + " -> ");
+            System.out.println(((Nodo) actual).dato + " -> ");
             actual = actual.siguiente;
         }
 
-        system.out.println("null");
+        System.out.println("null");
     }
 }

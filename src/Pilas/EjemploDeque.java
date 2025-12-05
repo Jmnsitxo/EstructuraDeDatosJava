@@ -16,7 +16,7 @@ public class EjemploDeque {
         String primero = deque.removeFirst();
         System.out.println(primero);
 
-        String ultimo = deque.removeLast()
+        String ultimo = deque.removeLast();
         System.out.println(ultimo);
 
         System.out.println("Contenido Actual" + deque);
