@@ -1,10 +1,10 @@
-package Lista.Doble;
+package com.mx.curso.Unidad3.Listas.Doble;
 
 
 class ListaDoble {
 
-    Lista.Doble.Nodo cabeza; // referencia al primer nodo
-    Lista.Doble.Nodo cola; // referencia al ultimo nodo
+    Nodo cabeza; // referencia al primer nodo
+    Nodo cola; // referencia al ultimo nodo
 
     public ListaDoble() {
         this.cabeza = null;
@@ -14,7 +14,7 @@ class ListaDoble {
     // Construir un mmetodo para agregar un nodo al final de la lista
     public void agregar(int dato) {
 
-        Lista.Doble.Nodo nuevoNodo = new Lista.Doble.Nodo(dato);
+        Nodo nuevoNodo = new Nodo(dato);
 
         if (cabeza == null) {
             cabeza = nuevoNodo;
@@ -28,7 +28,7 @@ class ListaDoble {
     }
 
     public void imprimirHaciaAdelante() {
-        Lista.Doble.Nodo actual = cabeza;
+        Nodo actual = cabeza;
         while (actual != null) {
             System.out.println(actual.dato + "<->");
             actual = actual.siguiente;
@@ -37,7 +37,7 @@ class ListaDoble {
     }
 
     public void imprimirHaciaAtras() {
-        Lista.Doble.Nodo actual = cola;
+        Nodo actual = cola;
         while (actual != null) {
             System.out.println(actual.dato + "<->");
             actual = actual.anterior;

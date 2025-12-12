@@ -1,4 +1,4 @@
-package Implementacion.ia;
+package com.mx.curso.Unidad3.ia;
 
 import java.util.LinkedList;
 import java.util.ListIterator;

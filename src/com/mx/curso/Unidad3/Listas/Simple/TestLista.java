@@ -1,6 +1,6 @@
-package Lista.simple;
+package com.mx.curso.Unidad3.Listas.Simple;
 
-import Lista.ListaEnlazada;
+import Unidad3.ia.Implementacion.Pilas.Lista.ListaEnlazada;
 
 public class TestLista {
 

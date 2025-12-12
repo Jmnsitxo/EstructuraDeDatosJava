@@ -1,14 +1,14 @@
-package Lista.Doble;
+package com.mx.curso.Unidad3.Listas.Simple;
 
-class Nodo {
-
+public class Nodo {
     int dato;
     Nodo siguiente;
-    Nodo anterior;
 
+    // Constructor
     public Nodo(int dato) {
         this.dato = dato;
-        this.anterior = null;
         this.siguiente = null;
     }
 }
+
+

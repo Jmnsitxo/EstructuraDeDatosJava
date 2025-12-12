@@ -1,6 +1,6 @@
-package Lista.Doble;
+package com.mx.curso.Unidad3.Listas.Doble;
 
-import Lista.simple.ListaDoble;
+import Unidad3.ia.Implementacion.Pilas.Lista.simple.ListaDoble;
 
 public class EjemploListaDoble {
 

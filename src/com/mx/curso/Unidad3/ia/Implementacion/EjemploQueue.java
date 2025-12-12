@@ -1,4 +1,4 @@
-package com.mx.curso.Unidad3;
+package com.mx.curso.Unidad3.ia.Implementacion;
 
 import java.util.LinkedList;
 import java.util.Queue;

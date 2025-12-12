@@ -1,4 +1,4 @@
-package Lista.simple;
+package com.mx.curso.Unidad3.Listas.Simple;
 
 public class listaEnlazada {
 
@@ -40,7 +40,7 @@ public class listaEnlazada {
     }
     public void imprimirLista(){
         Nodo actual = cabeza;
-        System.out.println("Lista simple");
+        System.out.println("com.mx.curso.Unidad3.Unidad3.ia.Implementacion.Pilas.Pilas.Lista simple");
 
         while (actual !=null){
             System.out.println(((Nodo) actual).dato + " -> ");
